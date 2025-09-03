@@ -625,6 +625,18 @@ graph = ["objgraph (>=1.7.2)"]
 profile = ["gprof2dot (>=2022.7.29)"]
 
 [[package]]
+name = "einops"
+version = "0.8.1"
+description = "A new flavour of deep learning operations"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "einops-0.8.1-py3-none-any.whl", hash = "sha256:919387eb55330f5757c6bea9165c5ff5cfe63a642682ea788a6d472576d81737"},
+    {file = "einops-0.8.1.tar.gz", hash = "sha256:de5d960a7a761225532e0f1959e5315ebeafc0cd43394732f103ca44b9837e84"},
+]
+
+[[package]]
 name = "et-xmlfile"
 version = "2.0.0"
 description = "An implementation of lxml.xmlfile for the standard library"
@@ -713,6 +725,21 @@ files = [
     {file = "filelock-3.19.1-py3-none-any.whl", hash = "sha256:d38e30481def20772f5baf097c122c3babc4fcdb7e14e57049eb9d88c6dc017d"},
     {file = "filelock-3.19.1.tar.gz", hash = "sha256:66eda1888b0171c998b35be2bcc0f6d75c388a7ce20c3f3f37aa8e96c2dddf58"},
 ]
+
+[[package]]
+name = "flash-attn"
+version = "2.8.3"
+description = "Flash Attention: Fast and Memory-Efficient Exact Attention"
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "flash_attn-2.8.3.tar.gz", hash = "sha256:1e71dd64a9e0280e0447b8a0c2541bad4bf6ac65bdeaa2f90e51a9e57de0370d"},
+]
+
+[package.dependencies]
+einops = "*"
+torch = "*"
 
 [[package]]
 name = "frozenlist"
@@ -4038,4 +4065,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.12"
-content-hash = "84c6a1bc407f88ffea195af3feb30f7757656fc413a47bcb9b97c1531706582e"
+content-hash = "b23a0cc94d06769795ae6db4b3d76f4afa0819443c29d96c0c4e84f401dd3b46"
