@@ -2,3 +2,7 @@
 *_accessKeys.csv
 /downloaded_model/**
 .libs.json
+/results/**
+/tokenized_datasets/**
+/wandb/**
+/workflows/**
